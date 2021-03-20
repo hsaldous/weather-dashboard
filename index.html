@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="dashboard row">
+            <div class = "form-inputs col-3">
+                <form id="search-form">
+                    <input type="text" name ="city" placeholder="City" id ='search-value' />
+                    <button type="submit" class="btn" >Search</button>
+                </form>
+            <div class="search-history">
+                <h3>Search History</h3>
+                <div id="past-searches">
+
+                </div>
+            </div>
+            </div>
+            <div class = "weather-data col-9">
+               
+                <div class = 'current-weather' id ='current-weather'>
+                    <h2>Current Weather</h2>
+                </div>
+                <h2>Five Day Forecast</h2>
+                <div class="five-day-forecast row" id = "five-day-forecast">
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
