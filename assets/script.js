@@ -32,6 +32,8 @@ $(document).ready(function () {
         searchForFiveDayForecastWeather(city);
         searchValueInput.val("");
     });
+    
+    
     function searchForCurrentCityWeather(city) {
         currentWeatherContainer.html("");
         var fullUrl = baseUrl + "q=" + city + "&units=imperial" + "&appid=" + apiKey;
@@ -111,6 +113,8 @@ $(document).ready(function () {
             }
         });
     }
+    
+    
     function getUvIndex(lat, lon) {
         console.log(lat, lon);
         var finalUrl = uvIndexBaseUrl + "lat=" + lat + "&lon=" + lon + "&exclude=hourly,daily&appid=" + apiKey;
@@ -134,6 +138,8 @@ $(document).ready(function () {
             currentWeatherContainer.append(uvIndexDiv);
         });
     }
+    
+    
     function retrieveSearchHistory() {
         if (localStorage.getItem("searchHistory")) {
             searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
